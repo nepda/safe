@@ -119,7 +119,7 @@ function socket_addrinfo_lookup(string $host, $service = null, array $hints = []
 /**
  * Binds the name given in address to the socket
  * described by socket. This has to be done before
- * a connection is be established using socket_connect
+ * a connection is established using socket_connect
  * or socket_listen.
  *
  * @param resource $socket A Socket instance created with socket_create.
@@ -851,3 +851,4 @@ function socket_wsaprotocol_info_release(string $info_id): void
         throw SocketsException::createFromPhpError();
     }
 }
+
